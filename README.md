@@ -1,4 +1,7 @@
 # TorneoCosmic
 
-este es un plugin de nuestro server de minecraft q hacemos con mis amigos 1 vez al año
-parte de todo el codigo de aca fue hecho con vibecoding asi que si se ve raro es por eso xd pero funciona
+Plugin para mi servidor de Minecraft con amigos.
+
+Este plugin implementa un sistema para la gestión y ejecución de torneos dentro del juego.
+
+Nota: Parte del código fue implementada utilizando vibecoding.
