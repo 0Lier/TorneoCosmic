@@ -1,0 +1,63 @@
+# ==========================================================
+#  TorneoCosmic - Configuración
+# ==========================================================
+
+# Posiciones donde se teletransportan los jugadores del 1v1.
+# Se configuran en el juego con /tournament set pos1 y /tournament set pos2
+# No las edites a mano a menos que sepas lo que haces.
+posiciones:
+  pos1: ""
+  pos2: ""
+
+duelo:
+  # Duración máxima del combate en segundos. Al llegar a 0 sin muerte,
+  # gana quien haya hecho más daño (ver reglas de empate en el README).
+  duracion-segundos: 300
+
+# Kit que se le entrega a cada peleador al iniciar el 1v1.
+# "material" es el nombre del Material de Bukkit (ej: DIAMOND_SWORD).
+# "amount" es la cantidad (opcional, por defecto 1).
+# "name" es el nombre del item, admite colores con '&' (opcional).
+# "lore" es una lista de líneas de descripción, admite colores con '&' (opcional).
+# "enchantments" es un mapa encantamiento: nivel (opcional).
+# Usa el nombre moderno del encantamiento en minúscula, ej: sharpness: 5,
+# protection: 4, power: 3, unbreaking: 3, etc.
+kit:
+  armadura:
+    helmet:
+      material: DIAMOND_HELMET
+    chestplate:
+      material: DIAMOND_CHESTPLATE
+    leggings:
+      material: DIAMOND_LEGGINGS
+    boots:
+      material: DIAMOND_BOOTS
+
+  # Slots de inventario: 0-8 son la hotbar, 9-35 el resto del inventario.
+  slots:
+    "0":
+      material: DIAMOND_SWORD
+      amount: 1
+      name: "&b&lEspada del Torneo"
+      enchantments:
+        sharpness: 2
+    "1":
+      material: BOW
+      amount: 1
+    "2":
+      material: ARROW
+      amount: 32
+    "8":
+      material: GOLDEN_APPLE
+      amount: 3
+      name: "&6Manzana Dorada"
+      slots:
+    "3":
+      material: SPLASH_POTION
+      amount: 1
+      potion-type: STRONG_HEALING  # Poción de vida instantánea II
+      name: "&cCuración Rápida"
+    "4":
+      material: POTION
+      amount: 1
+      potion-type: LONG_SWIFTNESS  # Poción de velocidad extendida (8 minutos)

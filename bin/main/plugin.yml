@@ -1,0 +1,12 @@
+name: TorneoCosmic
+version: '${version}'
+main: com.cosmicraft.torneocosmic.torneocosmic
+api-version: '26.2'
+author: Critycal
+description: Un plugin de Minecraft 26.2 para Cosmicraft
+
+commands:
+  tournament:
+    description: Comando principal del sistema de torneos.
+    usage: /tournament <set|pvp> ...
+    aliases: [torneo]
